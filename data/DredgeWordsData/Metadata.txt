@@ -1,0 +1,10 @@
+# Description of the data folder
+
+## Any usage of this data must also site `ahrefs.com`, the originator of many of these fields.
+## The Data folder contains 3 files.
+
+`attributes.csv` are website level attributes extracted from the SEO toolkit Ahrefs.
+
+`backlinks.csv` we extracted the 10 domains that most backlink to each labeled target domain. This is an edge list where each row contains an edge from `domain_from` to `domain_to`. Links is the number of links/ domain-level edge weight. Unique_pages contain the number of unique webpages on `domain_from`.
+
+`dredge_serps.csv` contains dredge words (in `qry` column) and their top 10 SERP results. Most columns are identical to those in WebSearcher (https://github.com/gitronald/WebSearcher). We added a final conditional column `target_domain` which is 1 when the the returned domain is the same as the domain associated with the dredge word phrase.

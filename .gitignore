@@ -1,0 +1,10 @@
+dredge_discovery/all_domain_serp_results
+dredge_discovery/politifact_keywords
+dredge_discovery/serp_results
+dredge_discovery/serps_full_list
+data/old
+# macOS system files
+.DS_Store
+
+# pyenv-specific files
+.python-version
